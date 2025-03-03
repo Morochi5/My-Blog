@@ -1,0 +1,263 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+    header, section, footer {
+        width: 100vw; /* Pastikan elemen mengambil seluruh lebar layar */
+    }
+}    
+/* Styling umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffdfd;
+    background-image: url('https://images.unsplash.com/photo-1592194996308-7b43878e84a3');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #000000 0%, #f5f6f7 180%);
+    color: white;
+    margin-top: 30px;
+}
+
+/* Menurunkan posisi h1 */
+h1 {
+    font-size: 1.8em
+    margin-top: 30px; /* Menurunkan posisi H1 */
+}
+/* Highlight Header */
+.highlight-header {
+    background-color: #000408;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Navigasi */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0d47a1;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Section */
+section {
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 900px;
+    background: rgba(7, 7, 7, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Styling untuk Gambar Profil */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.profile-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: left;
+}
+
+.profile-table td {
+    border: 1px solid none;
+    padding: 8px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.separator {
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    color: black; /* Mengubah warna teks menjadi hitam */
+    text-decoration: none; /* Menghapus garis bawah */
+}
+
+a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat dihover */
+}
+
+.value {
+    font-weight: normal;
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background: #2E8B57;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #256a40;
+}
+
+/* Konten Box */
+.content-box h4 {
+    margin-top: 0; /* Menghapus jarak atas */
+    padding-top: 0;
+}
+.content-box {
+    font-size: 23px;
+    font-weight: bold;
+    border: 3px solid #90caf9;
+    padding: 5px;
+    margin: 10px auto;
+    max-width: 400px;
+    max-height: 120px;
+    overflow-y: auto;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* Animasi Gambar */
+.animated-image {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.animated-image img {
+    width: 150px;
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Bagian Share */
+#share {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-left {
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5em;
+        padding: 40px 15px;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .content-box {
+        max-height: 200px;
+    }
+
+    .image-container img {
+        max-width: 70%;
+    }
+}
